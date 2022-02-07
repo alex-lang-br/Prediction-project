@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sydney House Price Prediction</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+            <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div class="img"></div>
+        <form class="form">
+            <h2>Number of Bathrooms</h2>
+            <div class="switch-field">
+                <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+                <label for="radio-bath-1">1</label>
+                <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2"/>
+                <label for="radio-bath-2">2</label>
+                <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+                <label for="radio-bath-3">3</label>
+                <input type="radio" id="radio-bath-4" name="uiBathrooms" value = "4"/>
+                <label for="radio-bath-4">4</label>
+                <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+                <label for="radio-bath-5">5</label>
+            </div>
+        </form>
+        <form class="form">
+            <h2>Number of Beds</h2>
+            <div class="switch-field">
+                <input type="radio" id="radio-beds-1" name="uiBeds" value="1"/>
+                <label for="radio-beds-1">1</label>
+                <input type="radio" id="radio-beds-2" name="uiBeds" value="2"/>
+                <label for="radio-beds-2">2</label>
+                <input type="radio" id="radio-beds-3" name="uiBeds" value="3"/>
+                <label for="radio-beds-3">3</label>
+                <input type="radio" id="radio-beds-4" name="uiBeds" value="4"/>
+                <label for="radio-beds-4">4</label>
+                <input type="radio" id="radio-beds-5" name="uiBeds" value="5"/>
+                <label for="radio-beds-5">5</label>
+            </div>
+        </form>
+        <form class="form">
+            <h2>Number of cars</h2>
+            <div class="switch-field">
+                <input type="radio" id="radio-cars-1" name="uiCars" value="1"/>
+                <label for="radio-cars-1">1</label>
+                <input type="radio" id="radio-cars-2" name="uiCars" value="2"/>
+                <label for="radio-cars-2">2</label>
+                <input type="radio" id="radio-cars-3" name="uiCars" value="3"/>
+                <label for="radio-cars-3">3</label>
+                <input type="radio" id="radio-cars-4" name="uiCars" value="4"/>
+                <label for="radio-cars-4">4</label>
+                <input type="radio" id="radio-cars-5" name="uiCars" value="5"/>
+                <label for="radio-cars-5">5</label>
+            </div>
+                <h2>Location</h2>
+            <div>
+                <select class="location" name="" id="uiLocations">
+                    <option value="" disabled="disabled" selected="selected">Choose a Suburb</option>
+                    <option>Avalon Beach</option>
+                    <option>Other</option>
+                </select>
+            </div>
+                <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimated Price</button>
+                <div id="uiEstimatedPrice" class="result">     <h2></h2> </div>
+            
+        </form>
+    </body>
+</html>
