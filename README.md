@@ -10,7 +10,7 @@ Python version: 3.8.8
 Packages: pandas, numpy, sklearn, xgboost, missingno, matplotlib, seaborn, flask, json, pickle    
 For Web app requirements:
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 Dataset used: [Sydney house price](https://www.kaggle.com/mihirhalai/sydney-house-prices)
 
@@ -25,4 +25,34 @@ After obtaining the data, I cleaned it so that I could use it to build our model
 I looked at the distribution of each property type as well as the price trend over the years. Here are a few samples:
 ![house_trend](house_price_trend.png)    
 ![evo_prop](property_price_trend.png)    
-![price_10_suburbs](Average price of a house in the 10 most popular Sydney suburbs over a 15 year period.png)
+
+
+## Model Building
+First, I transformed the suburb column into dummy variables. I then did a 80/20 train-test split.    
+I tried four different models and evaluated them by looking at their Mean Squared Error and Root Mean Squared Error. I chose these metrics because they are easy to interpret and give us a good idea of the goodness of the fit.    
+
+## Model Performance
+XGBRegressor far outperformed the other models. Here are the results:
+- Multiple Linear Regression: MSE=0.756, RMSE = 0.378
+- Lasso: MSE = 1.736, RMSE = 0.868
+- Decision Tree Regressor: MSE=0.750, RMSE=0.375
+- XGBRegressor: MSE=0.673, RMSE=0.338
+
+## Deployment 
+In this step, I built a flask API endpoint that is hosted on AWS. The API endpoint takes in a request with a list of values, i.e number of bath/beds/cars/suburbs, and returns an estimated price.
+
+# Deployment to the cloud (AWS EC2)
+1. Connect the EC2 instance using this command: 
+```
+ssh -i "C:\Users\YourUserName\.ssh\SHP.pem" ubuntu@ec2-54-144-107-20.compute-1.amazonaws.com
+```
+2. Install nginx on the EC2 instance.
+3. Copy the client, model, and server folders on the EC2 instance.
+4. Install the required libraries with:
+```
+pip3 install -r requirements.txt
+```
+5. Finally, run the flask server:
+```
+python3 /home/ubuntu/CodeFolder/client/server.py
+```
