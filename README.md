@@ -15,4 +15,11 @@ pip install -r requirements.txt
 Dataset used: [Sydney house price](https://www.kaggle.com/mihirhalai/sydney-house-prices)
 
 ## Data Cleaning
-After obtaining the data,
+After obtaining the data, I cleaned it so that I could use it to build our model. I made the following changes:
+- Changed the date column format to datetime, split it, and kept only the Year and Month columns.
+- Dropped the Id, postalCode and Month columns.
+- Removed outliers.
+- Built a new DataFrame with House as the only property type, and kept the last two years as well as the 100 most popular suburbs.
+
+## EDA
+I looked at the distribution of each property type as well as the price trend over the years. 
