@@ -8,7 +8,5 @@
 ## Code and Resources used
 Python version: 3.8.8
 Packages: pandas, numpy, sklearn, xgboost, missingno, matplotlib, seaborn, flask, json, pickle
-For Web app requirements: 
-'''
-{pip install -r requirements.txt}
-'''
+For Web app requirements:    pip install -r requirements.txt
+
