@@ -24,5 +24,5 @@ After obtaining the data, I cleaned it so that I could use it to build our model
 ## EDA
 I looked at the distribution of each property type as well as the price trend over the years. Here are a few samples:
 ![house_trend](house_price_trend.png)    
-![evo_prop](property_price_trend.png)
+![evo_prop](property_price_trend.png)    
 ![price_10_suburbs](Average price of a house in the 10 most popular Sydney suburbs over a 15 year period.png)
