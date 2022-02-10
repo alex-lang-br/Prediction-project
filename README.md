@@ -6,8 +6,8 @@
 - Deployed the model to production using Flask and AWS
 
 ## Code and Resources used
-Python version: 3.8.8
-Packages: pandas, numpy, sklearn, xgboost, missingno, matplotlib, seaborn, flask, json, pickle
+Python version: 3.8.8    
+Packages: pandas, numpy, sklearn, xgboost, missingno, matplotlib, seaborn, flask, json, pickle    
 For Web app requirements:
 ```
 pip install -r requirements.txt
@@ -22,4 +22,7 @@ After obtaining the data, I cleaned it so that I could use it to build our model
 - Built a new DataFrame with House as the only property type, and kept the last two years as well as the 100 most popular suburbs.
 
 ## EDA
-I looked at the distribution of each property type as well as the price trend over the years. 
+I looked at the distribution of each property type as well as the price trend over the years. Here are a few samples:
+![house_trend](house_price_trend.png)    
+![evo_prop](property_price_trend.png)
+![price_10_suburbs](Average price of a house in the 10 most popular Sydney suburbs over a 15 year period.png)
