@@ -1,6 +1,5 @@
-# TWO DECADES OF REAL ESTATE:
-## Price prediction and Trend analysis of the real estate market in Sydney from 2000-2019
+# Price prediction and Trend analysis of the real estate market in Sydney from 2000-2019: Project overview
 
-In this project, we are going to clean a 200k rows Dataset which contains every houses sold in Sydney of the last two decades. We are then going to perform some EDA (Data vizualization as well as outlier analysis), choose the optimal model for price prediction then finally deploy our model using Flask and AWS.
+- Created a tool that predicts house prices given the number of beds, bathrooms, cars and location desired
 
 # Part 1: Data Cleaning
