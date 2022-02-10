@@ -12,3 +12,7 @@ For Web app requirements:
 ```
 pip install -r requirements.txt
 ```
+Dataset used: [Sydney house price](https://www.kaggle.com/mihirhalai/sydney-house-prices)
+
+## Data Cleaning
+After obtaining the data,
