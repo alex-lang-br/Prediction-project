@@ -56,3 +56,4 @@ pip3 install -r requirements.txt
 ```
 python3 /home/ubuntu/CodeFolder/client/server.py
 ```
+Alternatively, you can see what the app looks like [here](http://ec2-54-144-107-20.compute-1.amazonaws.com/), but you won't be able to make a prediction since the server won't be up.
